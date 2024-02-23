@@ -8,8 +8,9 @@
 - EJS (Embedded JavaScript) for rendering views.
 - Use Axios or another HTTP client library for making API requests.
 
-## Current Dev. Progress:
+# Current Dev. Progress:
 
+## Module 1: Simple Pokemon Names List
 - ### Pokemon List from API [Done]
     - Use 'app.js' in /poke-names.
     - Refer Commit ebb8fb1 for main commit.
@@ -22,5 +23,10 @@
 - ### Pokemon List with Pagination [Done]  
     - Use same 'app.js' in /poke-names.
     - Refer Commit c3e5245 for pokelist branch commit.
+
+## Module 2: Pokemon Search
+- ### Search Pokemon and provide stats [Work In Progress]
+    - Use 'app.js' in /poke-search.
+
 
 ---
