@@ -6,7 +6,17 @@
 - Node.js for the backend.
 - Express.js as the web application framework.
 - EJS (Embedded JavaScript) for rendering views.
-- Use Axios or another HTTP client library for making API requests.
+- Use Axios or another HTTP client library for making API requests.  
+
+### Node Setup: 
+- Command to create new project
+    > npm init -y
+
+- Install npm dependencies for Dev.:  
+    > npm install express axios
+    > npm install ejs  
+
+### 
 
 # Current Dev. Progress:
 
