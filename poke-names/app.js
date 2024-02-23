@@ -1,4 +1,3 @@
-// app.js
 
 const express = require('express');
 const axios = require('axios');
@@ -8,16 +7,29 @@ const PORT = 3800;
 
 app.set('view engine', 'ejs');
 
+const fetchAllPokemon = async () => {
+  const allPokemon = [];
+  let nextUrl = 'https://pokeapi.co/api/v2/pokemon';
+
+  while (nextUrl) {
+    try {
+      const response = await axios.get(nextUrl);
+      allPokemon.push(...response.data.results);
+      nextUrl = response.data.next;
+    } catch (error) {
+      console.error('Error fetching Pokémon data:', error.message);
+      throw error;
+    }
+  }
+
+  return allPokemon;
+};
+
 app.get('/', async (req, res) => {
   try {
-    // Fetch a list of Pokémon from the PokeAPI
-    const response = await axios.get('https://pokeapi.co/api/v2/pokemon');
-    const pokemonList = response.data.results;
-
-    // Render the list of Pokémon on the home page
+    const pokemonList = await fetchAllPokemon();
     res.render('index', { pokemonList });
   } catch (error) {
-    console.error('Error fetching Pokémon data:', error.message);
     res.status(500).send('Internal Server Error');
   }
 });
