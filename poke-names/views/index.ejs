@@ -14,5 +14,17 @@
       <li><%= pokemon.name %></li>
     <% }); %>
   </ul>
+
+  <div>
+    <% if (currentPage > 1) { %>
+      <a href="/?page=<%= currentPage - 1 %>">Previous</a>
+    <% } %>
+
+    <span>Page <%= currentPage %></span>
+
+    <% if (pokemonList.length === 20) { %>
+      <a href="/?page=<%= currentPage + 1 %>">Next</a>
+    <% } %>
+  </div>
 </body>
 </html>
