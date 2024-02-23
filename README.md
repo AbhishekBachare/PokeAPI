@@ -36,7 +36,8 @@
 
 ## Module 2: Pokemon Search  
 - ### Install npm dependencies for Dev.:  
-    > npm install express node-fetch  
+    > npm install express  
+    > npm install node-fetch@2.6.1
 - ### Search Pokemon and provide stats [Work In Progress]
     - Use 'app.js' in /poke-search.
 
