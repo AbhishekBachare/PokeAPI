@@ -15,3 +15,10 @@ It will be running on http://localhost:3800 (can be edited in 'app.js')
 **Added Pokemon name list for all pokedex entries.**
 - Total 9 Generations.
 - Taking longer time to load.
+- Use Commit Id e5de391 to reset.  
+
+### **Version 1.2:**
+**Added Pagination & Lazy loading.**
+- Total 9 Generations.
+- Relatively fast loading
+- Use Commit Id c3e5245 to reset.
