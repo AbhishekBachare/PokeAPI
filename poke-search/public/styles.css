@@ -11,3 +11,14 @@ h1 {
 #pokemon-info {
     margin-top: 20px;
 }
+
+/* Add this style to create rounded type labels */
+.type-label {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 15px;
+    font-weight: bold;
+    color: white; /* Set font color to white */
+    cursor: default; /* Disable cursor as they are not clickable */
+}
