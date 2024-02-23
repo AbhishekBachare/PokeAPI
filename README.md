@@ -12,15 +12,15 @@
 - Command to create new project
     > npm init -y
 
-- Install npm dependencies for Dev.:  
-    > npm install express axios
-    > npm install ejs  
-
 ### 
 
 # Current Dev. Progress:
 
 ## Module 1: Simple Pokemon Names List
+- ### Install npm dependencies for Dev.:  
+    > npm install express axios
+    > npm install ejs  
+
 - ### Pokemon List from API [Done]
     - Use 'app.js' in /poke-names.
     - Refer Commit ebb8fb1 for main commit.
@@ -34,7 +34,9 @@
     - Use same 'app.js' in /poke-names.
     - Refer Commit c3e5245 for pokelist branch commit.
 
-## Module 2: Pokemon Search
+## Module 2: Pokemon Search  
+- ### Install npm dependencies for Dev.:  
+    > npm install express node-fetch  
 - ### Search Pokemon and provide stats [Work In Progress]
     - Use 'app.js' in /poke-search.
 
