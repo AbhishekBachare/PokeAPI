@@ -15,10 +15,16 @@ const displayPokemonInfo = async (pokemonName) => {
     const data = await getPokemonData(pokemonName);
 
     if (data) {
+        // Convert height from decimetres to meters
+        const heightInMeters = data.height / 10;
+
+        // Convert weight from hectograms to kilograms
+        const weightInKilograms = data.weight / 10;
+
         const html = `
             <p><strong>Name:</strong> ${data.name}</p>
-            <p><strong>Height:</strong> ${data.height}</p>
-            <p><strong>Weight:</strong> ${data.weight}</p>
+            <p><strong>Height:</strong> ${heightInMeters} m</p>
+            <p><strong>Weight:</strong> ${weightInKilograms} kg</p>
             <img src="${data.sprites.front_default}" alt="${data.name}">
         `;
         pokemonInfo.innerHTML = html;
